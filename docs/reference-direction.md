@@ -20,3 +20,6 @@ Original and cropped PNG supplied by client. Cropped artwork is rendered unchang
 
 ## Confirmed name — latest client messages
 Latest repeated client instruction confirms “Williams B&R GmbH” with smaller, lighter “Bau & Rückbau” below. Updated display/legal configuration, header/footer wordmark, metadata and introduction. Kept supplied W monogram as the source artwork; company name and descriptor are now editable native typography. Removed superseded company-name confirmation notice; remaining legal details are still pending. No generated logo asset is used.
+
+## Softer dark palette
+Client requested slightly less darkness. Raised main charcoal surfaces to #343A3B, services to #2B3234, contact to #283133 and specialist section to #414948. Reduced hero/photo overlays and restored some photo colour. Kept the established layout, light expertise section, warm-white lettering and gold accents.
