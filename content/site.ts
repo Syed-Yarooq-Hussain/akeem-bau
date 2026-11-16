@@ -1,7 +1,7 @@
 export const site = {
   displayName: 'Williams B&R GmbH', legalName: 'Williams B&R GmbH',
   tagline: 'Bau & Rückbau',
-  email: 'info@akeem-group.com',
+  email: 'info@wbrgmbh.com',
   whatsappNumber: '+491722187353',
   logo: '/images/williams-logo.png' as string | null,
   logoAlt: 'Williams B&R GmbH – Bau & Rückbau',
