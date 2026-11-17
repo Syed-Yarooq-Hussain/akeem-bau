@@ -1,9 +1,13 @@
-﻿# Four-language homepage
+﻿# Twelve-language application
 
-Routes: /de (default), /en, /fr, /es. / redirects to /de. Unsupported locale segments return 404. Locale-specific root layouts set the HTML language and metadata. next-intl provides messages to all homepage components. Header and footer language links preserve the active section hash; modifier-key clicks retain normal link behavior. Reloading or sharing the URL preserves the language. Brand name and original German brand tagline remain unchanged.
+Routes: /de, /en, /tr, /pl, /ro, /sq, /es, /fr, /el, /uk, /bg, /it. The root redirects to /de; unsupported locales return 404. German is the default.
 
-Translation sources: messages/translations.txt, pipe-separated German/English/French/Spanish. Run node scripts/messages.cjs after edits to regenerate JSON catalogues and keys. Run node scripts/check-locales.cjs for catalogue and structured-service-content coverage. Form schema values are stable across languages; labels and validation errors are translated. WhatsApp links use a localized prefilled message. No automatic translation service or tracker is used.
+Header and footer provide native language selectors with native language names. Switching preserves the query string and section hash. The URL retains the selected language across reloads and sharing. Changing language reloads the page; unsent form input is not persisted.
 
-Language navigation reloads the page; unsent form input is not persisted. Form remains a preview without server delivery. Existing legal placeholders are translated but remain incomplete.
+All page copy, services, form labels and validation, accessibility labels, WhatsApp messages, brand descriptor and metadata have translations. Company names, people's names and the postal address stay unchanged. Company details appear in the contact section, footer and legal notice: C. Agbanyo (managing director), I. Bericha (construction management and contact), Borselstraße 20, 22765 Altona.
 
-Verified: production build and TypeScript passed; catalogue/structured-content coverage passed; all four HTTP routes returned 200 with matching document language, translated hero/form/service copy and working destination URLs; default / redirected to /de; unsupported /it returned 404. Browser click/visual testing was not performed.
+Translation sources: messages/translations.txt for the original German/English/French/Spanish catalogues; messages/{tr,pl,ro,sq,el,uk,bg,it}.txt for the additional languages, one line per original message in the same order; messages/company.json for company labels and metadata. Run node scripts/messages.cjs to regenerate all JSON catalogues. The generator rejects incorrect line counts. New text requires entries in every language. Native-speaker editorial review has not been performed.
+
+Validation: npm run typecheck; npm run build; node scripts/check-locales.cjs. Start production on port 3100 and run node scripts/check-locale-routes.cjs for all 12 HTTP routes, localized content/metadata, company details, selectors, default redirect and unsupported locale. QA_BASE_URL can override the server URL. Browser interaction and visual testing have not been performed.
+
+The existing inquiry form is still a local validation preview without server delivery. Registration details and the full privacy notice remain pending. No deployment performed.

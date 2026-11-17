@@ -169,5 +169,10 @@
   "m167": "Limpieza de obra",
   "m168": "Soluciones a medida",
   "m169": "Alquiler de maquinaria",
-  "m170": "Construcción a medida"
+  "m170": "Construcción a medida",
+  "managingDirector": "Directora general",
+  "constructionContact": "Directora de obra y persona de contacto",
+  "address": "Dirección",
+  "legalPending": "Faltan los datos registrales. Este aviso legal no está completo.",
+  "metadataDescription": "Construcción y demolición en Hamburgo"
 }

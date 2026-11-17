@@ -1,7 +1,9 @@
-﻿import {useId} from 'react';
+'use client';
+import {useCopy} from '@/i18n/use-copy';
+import {useId} from 'react';
 import {site} from '@/content/site';
 
-export default function BrandLogo(){
+export default function BrandLogo(){const t=useCopy();
  const filterId = 'williams-brand-' + useId().replace(/:/g, '');
  return <span className="brand-lockup">
   {site.logo && <svg className="brand-monogram" viewBox="0 0 460 330" aria-hidden="true" focusable="false">
@@ -16,6 +18,6 @@ export default function BrandLogo(){
    </filter></defs>
    <image href={site.logo} width="1625" height="330" filter={`url(#${filterId})`}/>
   </svg>}
-  <span className="brand-wordmark"><span className="brand-name">{site.displayName}</span><span className="brand-descriptor">{site.tagline}</span></span>
+  <span className="brand-wordmark"><span className="brand-name">{site.displayName}</span><span className="brand-descriptor">{t(site.tagline)}</span></span>
  </span>;
 }

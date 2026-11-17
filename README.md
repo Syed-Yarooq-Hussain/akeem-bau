@@ -1,6 +1,6 @@
 # Williams Baukonzept — homepage milestone
 
-Next.js App Router / TypeScript / Tailwind CSS / Motion / React Hook Form / Zod. next-intl is installed for phase 5.
+Next.js App Router / TypeScript / Tailwind CSS / Motion / React Hook Form / Zod. next-intl supports all 12 requested languages; see docs/localization.md for routes, translation sources and verification.
 
 ## Run
 
@@ -17,4 +17,4 @@ The configurable name and logo path are in content/site.ts. A temporary text ide
 
 The inquiry form validates locally only. It has no delivery endpoint or active file input. It never claims submission success. Phase 5 must implement server-side validation, safe storage, file signatures/size/type limits, malware scanning, rate limiting/spam protection and verified delivery before enabling uploads or sending. Legal content is explicitly incomplete; preview metadata prevents indexing.
 
-Next: distinct service/detail routes, English routing via next-intl, approved legal/contact/project content, secure delivery/upload backend and launch SEO. Space Grotesk and Inter are served locally through Fontsource. Replace external images with approved local photography before launch.
+Next: distinct service/detail routes, approved legal/contact/project content, secure delivery/upload backend and launch SEO. Space Grotesk and Inter are served locally through Fontsource. Replace external images with approved local photography before launch.

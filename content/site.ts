@@ -1,4 +1,8 @@
 export const site = {
+  managingDirector: 'C. Agbanyo',
+  constructionContact: 'I. Bericha',
+  street: 'Borselstraße 20',
+  postalCity: '22765 Altona',
   displayName: 'Williams B&R GmbH', legalName: 'Williams B&R GmbH',
   tagline: 'Bau & Rückbau',
   email: 'info@wbrgmbh.com',

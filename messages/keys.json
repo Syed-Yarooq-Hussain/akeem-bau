@@ -169,5 +169,11 @@
   "Baustellenräumung": "m167",
   "Individuelle Lösungen": "m168",
   "Baumaschinenvermietung": "m169",
-  "Individuelle Bauarbeiten": "m170"
+  "Individuelle Bauarbeiten": "m170",
+  "Geschäftsführerin": "managingDirector",
+  "Bauleitung & Ansprechpartnerin": "constructionContact",
+  "Adresse": "address",
+  "Registerangaben sind noch zu ergänzen. Kein vollständiges Impressum.": "legalPending",
+  "Bau & Rückbau in Hamburg": "metadataDescription",
+  "Bau & Rückbau": "m92"
 }
