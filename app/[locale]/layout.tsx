@@ -1,3 +1,4 @@
+import {searchMetadata} from '@/content/seo';
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {isLocale,locales} from '@/i18n/config';
@@ -7,5 +8,5 @@ import '@fontsource/space-grotesk/latin-500.css';
 import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-600.css';
 export function generateStaticParams(){return locales.map(locale=>({locale}));}
-export async function generateMetadata({params}:{params:Promise<{locale:string}>}){const {locale}=await params;if(!isLocale(locale))notFound();const messages=(await import(`../../messages/${locale}.json`)).default;const description=messages.metadataDescription;return {title:`Williams B&R GmbH | ${description}`,description:description,robots:{index:false,follow:false}};}
+export async function generateMetadata({params}:{params:Promise<{locale:string}>}){const {locale}=await params;if(!isLocale(locale))notFound();const messages=(await import(`../../messages/${locale}.json`)).default;const description=messages.metadataDescription;return {title:`Williams B&R GmbH | ${description}`,description:description,...searchMetadata(locale)};}
 export default async function LocaleLayout({children,params}:{children:React.ReactNode;params:Promise<{locale:string}>}){const {locale}=await params;if(!isLocale(locale))notFound();const messages=(await import(`../../messages/${locale}.json`)).default;return <html lang={locale}><body><NextIntlClientProvider locale={locale} messages={messages}>{children}</NextIntlClientProvider></body></html>}
